@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Training</title>
+</head>
+<body>
+{% block content %}
+    <style>
+    body{
+        background-color: aliceblue;
+    }
+    </style>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-5">
+          <h2>Python Training</h2><br><br>
+    <h5>Python Training Overview</h5>
+    <p>Python is a general-purpose interpreted, interactive, object-oriented,
+        and high-level programming language. Python has been one of the premier,
+        flexible, and powerful open-source language that is easy to learn,
+        easy to use, and has powerful libraries for data manipulation and analysis</p><br>
+    <h5>What are the Python Course Pre-requisites</h5>
+            <p>There are no hard pre-requisites. Basic understanding of Computer Programming terminologies
+                is sufficient.Also, basic concepts related to Programming and
+                Database is beneficial but not mandatory.</p><br>
+    <h5>Objectives of the Course</h5>
+                <li>To understand the concepts and constructs of Python.</li><br>
+            <li>To create own Python programs, know the machine learning
+                algorithms in Python and work on a real-time project running on Python.</li>
+            <br>
+    <h5>Who should do the course</h5>
+                <li>Big Data Professionals.</li>
+                <li>IT Developers.</li>
+                <li>Those who are showing interest to build their career in Python.</li><br>
+    <h5>Python Training Course Duration</h5>
+            <li>35 Days, Daily 1 Hours</li><br>
+    <h4>Python Course Content</h4><br>
+    <h5>Core Python</h5><br>
+            <li>Introduction to Languages</li>
+            <li>Introduction to Python</li>
+            <li>Python Software’s</li>
+            <li>Python Language Fundamentals</li>
+            <li>Different Modes of Python</li>
+            <li>Python Variables</li>
+            <li>Operators</li>
+            <li>Input & Output Operators</li>
+            <li>Data Structures or Collections</li>
+            <li>List Collection</li>
+            <li>Tuple Collection</li>
+            <li>Set Collection</li>
+            <li>Dictionary Collection</li>
+            <li>Functions</li><br>
+    <h5>Advanced Python</h5><br>
+            <li>Python Modules</li>
+            <li>Packages</li>
+            <li>OOPs</li>
+            <li>PANDAS</li>
+            <li>NUMPY</li><br><br><br>
+    </div>
+        <div class="col-md-7"><br><br>
+            <img src="{% static 'images/python-logo.png' %}" height="70%" width="100%">
+        </div>
+    </div>
+    </div>
+{% endblock %}
+</body>
+</html>

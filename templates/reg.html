@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{% static 'css/reg.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-4 col-md-4">
+                <form method="post">
+                    {% csrf_token %}
+                    <h3>Please Register Your Details...</h3>
+                {{ rform }}<br>
+                    <center>
+                <input type="submit" value="Submit" class="btn btn-success">
+                <input type="reset" value="Clear" class="btn btn-danger"><br><br>
+                    </center>
+
+            <div class="offset-md-1"><a href="/#/">Go To Login Form</a></div>
+                </form><br><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

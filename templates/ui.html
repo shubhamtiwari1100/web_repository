@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Technologies</title>
+</head>
+<body>
+{% block content %}
+    <style>
+    body{
+        background-color: aliceblue;
+    }
+    </style>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-5">
+          <h2>UI Technologies Training</h2><br><br>
+            <h5>UI Technologies Training Overview</h5>
+            <p>Usually, UI stands for User Interface which mainly comes under the human-interaction field.
+                The main objective of UI Technology is to to make the user’s interaction as very simple
+                and most efficient. UI helps us to decrease the gap between requirements and implementation
+                over structured systems associated with the programming language.
+                This UI Technologies Training helps the aspirants to learn the complete
+                concept from beginner stage to advanced stage</p><br>
+            <h5>UI Technologies Training Objectives</h5>
+            <li>To analyze the necessities and limitations for programming applications by executing user interfaces.</li>
+            <li>To implement useful client interface methods.</li>
+            <li>Ability to access the low-high programming application.</li><br>
+            <h5>Pre-requisites of the Course</h5>
+            <li>Basic knowledge of HTML and Photoshop is enough.</li><br>
+            <h5>Who should do the course</h5>
+            <li>Those who are showing interest towards UI design and development.</li><br>
+            <h4>UI Technologies Course Content</h4>
+            <li>Introduction to UI Technologies.</li>
+            <li>Basics</li>
+            <li>More Tags in HTML</li>
+            <li>More CSS properties</li>
+            <li>Form Elements</li>
+            <li>JavaScript</li>
+            <li>JavaScript Supported Data structures</li>
+            <li>Advanced JavaScript</li>
+            <li>jQuery Framework</li>
+            <li>jQuery Traversing Methods</li>
+            <li>Events using jQuery</li>
+            <li>AJAX</li>
+            <li>jQuery Templating</li>
+            <li>HTML5</li>
+            <li>CSS 3</li>
+            <li>Responsive Designs</li>
+            <li>AngularJS Framework</li>
+            <li>Mini Project</li><br><br><br>
+        </div>
+        <div class="col-md-7"><br><br>
+            <img src="{% static 'images/UI logo.jpg' %}" height="80%" width="110%">
+        </div>
+    </div>
+    </div>
+{% endblock %}
+</body>
+</html>

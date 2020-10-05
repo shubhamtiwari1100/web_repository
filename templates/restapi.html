@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest API</title>
+</head>
+<body>
+{% block content %}
+    <style>
+    body{
+        background-color: aliceblue;
+    }
+    </style>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-5">
+          <h2>Django Rest Framework Training</h2><br><br>
+            <h4>REST API Overview</h4>
+            <p>Django REST framework is a powerful and flexible toolkit for building Web APIs.</p>
+            <h4>Why should do the course</h4>
+            <h6>Some reasons you might want to use REST framework:</h6><br>
+
+            <li>The Web browsable API is a huge usability win for your developers.</li>
+            <li>Authentication policies including packages for OAuth1a and OAuth2.</li>
+            <li>Serialization that supports both ORM and non-ORM data sources.</li>
+            <li>Customizable all the way down - just use regular function-based views if you don't need the more powerful features.</li>
+            <li>Extensive documentation, and great community support.</li>
+            <li>Used and trusted by internationally recognised companies including Mozilla, Red Hat, Heroku, and Eventbrite.</li><br>
+            <h4>REST API COURSE CONTENTS</h4>
+            <li>Introduction to Django Rest Framework</li>
+            <li>Installation of Django Rest Framework</li>
+            <li>Types of Web Services</li>
+            <li>RestFul Web Services</li>
+            <li>Class Based View</li>
+            <li>Function Based View</li>
+            <li>Mixins</li>
+            <li>Serialization</li>
+            <li>CRUD Operation without Rest Framework</li>
+            <li>Developing Web APIs</li>
+            <li>API Views</li>
+            <li>View Sets</li>
+            <li>Authentication and Authorization</li>
+            <li>Pagination</li><br><br><br>
+        </div>
+        <div class="col-md-6"><br><br>
+            <img src="{% static 'images/logo.png' %}" height="80%" width="100%">
+        </div>
+    </div>
+    </div>
+{% endblock %}
+</body>
+</html>

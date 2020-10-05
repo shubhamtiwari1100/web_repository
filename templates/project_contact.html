@@ -1,0 +1,63 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+ body{
+    background-color: lightskyblue;
+}
+.cls1{
+    text-align: center;
+}
+a {
+    float: left;
+    display: inline-block;
+    border: 2px blue solid;
+    padding: 5px 20px;
+    margin-right: 50px;
+    font-size: 20px;
+    background-color: mediumorchid;
+    color: white;
+}
+ul li a:hover{
+    background-color:lightcyan;
+    color: black;
+    border-radius: 20px;
+    }
+</style>
+<body>
+<header>
+    <h1 class="cls1">Welcome to PythonWorld</h1>
+    <ul>
+        <li><a href="/home/">Home</a></li>
+    </ul>
+</header>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                <h3>Register Your Details...</h3>
+                {% csrf_token %}
+                {{ cform }}<br><br>
+                <center>
+                <input type="submit" value="Submit" class="btn btn-success">
+                <input type="reset" value="Clear" class="btn btn-danger">
+                </center>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/Ganeshji.jpg' %}" style="width: 115%; height: 100%">
+        </div>
+    </div>
+</div>
+</body>
+</html>
